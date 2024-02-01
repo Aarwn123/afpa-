@@ -1,0 +1,387 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 14px;
+    max-width: 1600px;
+    font-family: 'Poppins', sans-serif;
+    color: #232323;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 75vh;
+    width: 90%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/************      header        ************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    min-height: 10vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: baseline;
+
+}
+
+header nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-weight: bold;
+    border-top: 3px solid transparent;
+    width: 100%;
+    padding: 0 25px;
+}
+
+nav ul li:hover {
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+    cursor: pointer;
+}
+
+#logo {
+    margin: 5px;
+}
+
+#logo img {
+    height: 12vh;
+    width: auto;
+}
+
+
+
+
+/***********nav*/
+
+/****section search****/
+
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.search-box .fa-location-dot {
+    display: flex;
+    align-items: center;
+    padding: 14px 10px;
+    height: 8px;
+    font-size: 18px;
+    background-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.search-box input {
+
+    outline: none;
+    height: 25px;
+    border: solid 1px #F2F2F2;
+    padding: 5px;
+    font-size: bold;
+
+}
+
+.search-box input::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+button {
+    background-color: #0065FC;
+    color: white;
+    height: 36px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.search-box button .fa-magnifying-glass {
+    display: none;
+}
+
+/****section search****/
+.titre {
+    margin: 5px 0;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.titre p {
+    padding: 2px 0;
+
+}
+
+/*********info*******/
+
+.info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
+}
+
+.info p {
+    margin-left: 10px;
+
+}
+
+.info i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    border: 1px solid #e1e1e1;
+    border-radius: 100%;
+    min-width: 25px;
+    min-height: 25px;
+    font-size: 16px;
+}
+
+
+/***************************************************************/
+/****       activités                  *************************/
+/***************************************************************/
+.activites {
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 70vh;
+    margin: 10px 0 50px 0;
+}
+
+.card {
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.half-card {
+    height: 48%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.ombre {
+    box-shadow: 0px 0px 15px 0px #00000052;
+}
+
+.card img,
+.half-card img {
+    width: 100%;
+    flex-grow: 1;
+    object-position: top;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.half-card img {
+    max-height: 80%;
+}
+
+.card h4 {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    min-height: 7vh;
+    height: 7vh;
+    padding-left: 15px;
+    font-size: 10px;
+}
+
+
+
+
+/***************************************************************/
+/****       footer                  *************************/
+/***************************************************************/
+
+
+.footer {
+    width: 100%;
+    background-color: #F2F2F2;
+    min-height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-bloc {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    width: 30%;
+}
+
+.footer-bloc h4 {
+    padding-left: 38px;
+    font-size: 14px;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+.footer-bloc ul {
+    list-style: none;
+}
+
+.footer-bloc ul li {
+    padding: 5px 0;
+}
+
+.footer-link:hover {
+    cursor: pointer;
+    color: #232323;
+}
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%       Media queries  tablette/    %%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+@media screen and (max-width:768px) {
+    .container {
+
+        height: min-content;
+    }
+
+    .card {
+        height: 70vh;
+        width: 48%;
+    }
+
+
+}
+
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%       Media queries  tablette/    %%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+
+@media screen and (max-width:420px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    #logo img {
+        height: 12vh;
+        width: auto;
+    }
+
+    header nav {
+        display: block;
+        width: auto;
+    }
+
+    header nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: block;
+        width: 50%;
+        padding: 20px;
+        text-align: center;
+        margin: 0px;
+        border: 2px solid transparent;
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+    header nav ul li:hover {
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
+        cursor: pointer;
+    }
+
+    .container> :nth-child(2n+1) {
+        height: 40vh;
+        width: 100%;
+    }
+
+    .container> :nth-child(2n) {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .footer-bloc {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search-box {
+        margin-left: 0;
+    }
+
+    .search-box button .fa-magnifying-glass {
+        display: block;
+        padding: 0 15px;
+    }
+
+
+    .search-box button span {
+        display: none;
+    }
+
+    .search-box input {
+        flex-grow: 1;
+    }
+}
