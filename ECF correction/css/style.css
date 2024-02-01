@@ -60,8 +60,8 @@ header nav ul li {
 }
 
 nav ul li:hover {
-    color: #0065FC;
-    border-top: 3px solid #0065FC;
+    color: #8b00fc;
+    border-top: 3px solid #ac00fc;
     cursor: pointer;
 }
 
